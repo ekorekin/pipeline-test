@@ -8,8 +8,8 @@ node {
     checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'subdirectory2']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ekorekin/repo2']]])
     stage 'first script'
     // run first script
-    load 'subdirectory1/Jenkinsfile'
+    load 'subdirectory1/Jenkinsfile1'
     stage 'second script'
     // run second script
-    load 'subdirectory2/Jenkinsfile'
+    load 'subdirectory2/Jenkinsfile2'
 }
