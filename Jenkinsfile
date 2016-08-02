@@ -16,4 +16,7 @@ node {
   stage 'second script'
   // run second script
   load 'subdirectory2/Jenkinsfile2'
+  
+  stage 'list fs tree'
+  sh 'tree'
 }
